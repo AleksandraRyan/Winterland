@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Merriweather:ital@1&family=Viaoda+Libre&display=swap');
 
+body {
+  overflow-x: hidden;
+}
+
 .bg-primary {
   display: flex;
   flex-direction: column;
@@ -78,7 +82,6 @@
 
 /* About Page / Intro */
 .d-flex {
-  background-color: aquamarine;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,4 +134,27 @@ footer {
   font-family: 'Viaoda Libre', cursive;
   /* background-color: blueviolet; */
   padding: 20px 0;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .navbar .navbar-brand {
+    text-transform: capitalize;
+    letter-spacing: 0;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .navbar {
+    height: 30vh;
+  }
+
+  .d-flex {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .navbar .nav-link:hover {
+    border-bottom: none;
+  }
 }
