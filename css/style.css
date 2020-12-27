@@ -107,7 +107,7 @@ body {
 
 /* Blog */
 
-.blog {
+#blog {
   background-color: blueviolet;
   height: 50vh;
   background: url('https://images.unsplash.com/photo-1445543949571-ffc3e0e2f55e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')
@@ -118,13 +118,13 @@ body {
   text-align: center;
 }
 
-.blog h2 {
+#blog h2 {
   display: inline;
   font-family: 'Merriweather', sans-serif;
   border-bottom: 2px solid #000;
 }
 
-#blog footer {
+#card footer {
   font-size: 20px;
 }
 
@@ -146,7 +146,19 @@ footer {
   }
 
   .navbar {
-    height: 30vh;
+    height: 10vh;
+  }
+
+  .navbar-nav {
+    color: #000 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-item:hover {
+    border-bottom: 2px solid #fff;
   }
 
   .d-flex {
